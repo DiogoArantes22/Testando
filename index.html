@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Configurações básicas de charset e responsividade -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap demo</title>
+
+    <!-- Importação do CSS do Bootstrap 5.3.7 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- Importação do jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-dark text-white"> <!-- Corpo da página com fundo escuro e texto branco -->
+
+    <!-- Cabeçalho/Navegação -->
+
+    <head>
+        <!-- Navbar fixa no topo (sticky-top), responsiva (navbar-expand-sm), tema escuro -->
+        <nav class="navbar bg-dark border-bottom border-body sticky-top navbar-expand-sm" data-bs-theme="dark">
+            <div class="container-fluid">
+                <!-- Logo ou nome do site -->
+                <a class="navbar-brand" href="#">Navbar</a>
+
+                <!-- Botão de menu hamburguer para telas pequenas -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Conteúdo da navbar (links e formulário de busca) -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- Link padrão -->
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <!-- Link simples -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <!-- Link desativado -->
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <!-- Formulário de busca na navbar -->
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </head>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Grid responsivo com 4 colunas por linha -->
+        <div class="container-fluid text-center mt-3">
+            <div class="row row-cols-4">
+                <!-- Coluna com texto -->
+                <div class="col">
+                    <p>Prova de Desenvolvimento Web</p>
+                </div>
+                <!-- Coluna com ícone (SVG) -->
+                <div class="col"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-emoji-sunglasses-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16M2.31 5.243A1 1 0 0 1 3.28 4H6a1 1 0 0 1 1 1v.116A4.2 4.2 0 0 1 8 5c.35 0 .69.04 1 .116V5a1 1 0 0 1 1-1h2.72a1 1 0 0 1 .97 1.243l-.311 1.242A2 2 0 0 1 11.439 8H11a2 2 0 0 1-1.994-1.839A3 3 0 0 0 8 6c-.393 0-.74.064-1.006.161A2 2 0 0 1 5 8h-.438a2 2 0 0 1-1.94-1.515zM4.969 9.75A3.5 3.5 0 0 0 8 11.5a3.5 3.5 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1-3.898-2.25.5.5 0 0 1 .866-.5z" />
+                    </svg></div>
+                <!-- Coluna com texto -->
+                <div class="col">Utilizando BootStrap</div>
+                <!-- Coluna com imagem (logo Bootstrap) -->
+                <div class="col">
+                    <img src="https://logospng.org/wp-content/uploads/bootstrap-768x432.png" alt="" width="50%">
+                </div>
+                <!-- Coluna com botão (toggle visual) -->
+                <div class="col">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="button" aria-pressed="false"
+                        autocomplete="off">
+                        Button
+                    </button>
+                </div>
+                <!-- Coluna com tabela responsiva -->
+                <div class="col">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-borderless table-primary align-middle">
+                            <thead class="table-light">
+                                <caption>Table Name</caption>
+                                <tr>
+                                    <th>HTML</th>
+                                    <th>BootStrap</th>
+                                    <th>jQuery</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
+                                <tr class="table-primary">
+                                    <td scope="row">Corpo</td>
+                                    <td>Design</td>
+                                    <td>Funcionalidades</td>
+                                </tr>
+                            </tbody>
+                            <tfoot></tfoot>
+                        </table>
+                    </div>
+                </div>
+                <!-- Coluna com acordeom (accordion) -->
+                <div class="col">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="true"
+                                    aria-controls="flush-collapseOne">
+                                    Acordeom
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Sou um acordeom, meu conteúdo é oculto por padrão, mas posso ser expandido ou
+                                    recolhido.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Última coluna com mensagem -->
+                <div class="col">
+                    <h2>Acabou os elementos dos grid</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Formulário com validação personalizada -->
+        <div class="container text-center">
+            <form class="row g-3 needs-validation" novalidate>
+                <!-- Campo nome completo com pattern para validar nome + sobrenome -->
+                <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">Nome completo</label>
+                    <input type="text" class="form-control" id="validationCustom01"
+                        pattern="^[A-Za-z]{3,}( [A-Za-z]{3,})+$" required>
+                    <div class="valid-feedback">Campo preenchido corretamente!</div>
+                    <div class="invalid-feedback">Prencha este campo corretamente, com nome e sobrenome!</div>
+                </div>
+
+                <!-- Campo data com limite máximo -->
+                <div class="col-md-4">
+                    <label for="data" class="form-label">Escolha a data:</label>
+                    <input type="date" class="form-control" id="data" name="data" max="2025-07-31" required>
+                    <div class="invalid-feedback">Selecione uma data válida!</div>
+                </div>
+
+                <!-- Campo CPF com pattern numérico (sem pontos ou traços) -->
+                <div class="col-md-4">
+                    <label for="Cpf" class="form-label">Digite o CPF:</label>
+                    <input type="text" name="cpf" id="Cpf" required class="form-control" pattern="[0-9]{11}"
+                        placeholder="000.000.000-00">
+                    <div class="invalid-feedback">Digite um CPF válido, sem pontos ou traços!</div>
+                </div>
+
+                <!-- Seletor de situação acadêmica -->
+                <div class="col-md-3">
+                    <label for="validationCustom04" class="form-label">Situação:</label>
+                    <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">Selecione...</option>
+                        <option>Graduando</option>
+                        <option>Graduado</option>
+                        <option>Especialização</option>
+                        <option>Mestrado</option>
+                        <option>Doutorado</option>
+                    </select>
+                    <div class="invalid-feedback">Selecione a situação atual!</div>
+                </div>
+
+                <!-- Checkbox para aceitar termos -->
+                <div class="col-md-3 mt-5">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="validationCustom05" required>
+                        <label class="form-check-label" for="validationCustom05">Aceito os termos e condições</label>
+                        <div class="invalid-feedback">Selecione uma opção válida!</div>
+                    </div>
+                </div>
+
+                <!-- Switch para aceitar envio de dados -->
+                <div class="col-4 mt-5">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="switchCheckChecked" required>
+                        <label class="form-check-label" for="switchCheckChecked">Aceito o envio das minhas
+                            informações</label>
+                    </div>
+                </div>
+
+                <!-- Botão de envio -->
+                <div class="col-6">
+                    <button class="btn btn-primary" type="submit" style="width: 50%;" id="Enviar">Enviar</button>
+                </div>
+
+                <!-- Botão cancelar com modal de confirmação -->
+                <div class="col-6">
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        style="width: 50%;">Cancelar</button>
+
+                    <!-- Modal de cancelamento -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content bg-dark text-white">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Todas as informações serão perdidas, deseja cancelar?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-danger" id="CancelarModal">Sim,
+                                        Cancelar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mensagem de sucesso, inicialmente escondida -->
+                <div class="alert alert-success d-none" role="alert" id="Sucesso">
+                    Formulario enviado com sucesso!
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Validação do formulário + mostrar sucesso -->
+    <script>
+        (() => {
+            'use strict'
+            const forms = document.querySelectorAll('.needs-validation')
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    } else {
+                        event.preventDefault();
+                        $("#Sucesso").removeClass("d-none").hide().fadeIn(1000);
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+
+        // Botão do modal: recarrega a página ao cancelar
+        $(function () {
+            $("#CancelarModal").click(function () {
+                location.reload();
+            });
+        });
+    </script>
+
+    <!-- Rodapé simples -->
+    <footer class="mastfoot mt-5 text-center">
+        <div class="inner">
+            <p>Pagina simples usando Bootstrap - Diogo Arantes Borges Andrade - 12311BSI303</p>
+        </div>
+    </footer>
+
+    <!-- Scripts Bootstrap (Popper + JS) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="..."
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="..."
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
